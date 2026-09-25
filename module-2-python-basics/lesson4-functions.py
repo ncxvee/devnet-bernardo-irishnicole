@@ -43,19 +43,19 @@ YOUR SCRIPT
 ============================================
 """
 
-print (" ——————————————————————————————— ")
+print (" -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
 print ("|         - PyTEA Menu -        |")
-print (" ——————————————————————————————— ")
+print (" ------------------------------- ")
 print ("|  Milk Tea Flavor:             |")
 print ("|  1. Chocolate                 |")
 print ("|  2. Okinawa                   |")
 print ("|  3. Matcha                    |")
-print (" ——————————————————————————————— ")
+print (" ------------------------------- ")
 print ("|  Milk Tea Size:               |")
-print ("|  Small  - ₱100                |")
-print ("|  Medium - ₱120                |")
-print ("|  Large  - ₱150                |")
-print (" ——————————————————————————————— ")
+print ("|  Small  - PHP 100             |")
+print ("|  Medium - PHP 120             |")
+print ("|  Large  - PHP 150             |")
+print (" -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
 
 print ()
 flavor = input ("Milk Tea Flavor: ")
@@ -73,7 +73,7 @@ def create_order (flavor, size, quantity):
         
     total = price * quantity
     
-    return f"{quantity} {size} {flavor} Milktea - ₱{total}"
+    return f"{quantity} {size} {flavor} Milktea - PHP {total}"
     
 order = create_order (flavor, size, quantity)
 print ("ORDER:", order)
@@ -116,3 +116,4 @@ times, such as calculating grades,
 recording attendance, or creating a receipt.
 
 ============================================
+"""
