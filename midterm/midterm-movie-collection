@@ -3,16 +3,33 @@ Midterm Practical Exam — Movie Collection Manager
 Student: [your name]
 """
 
-movies = []
+movies = ["Movie 01", "Movie 02", "Movie 03"]
 
 
 def display_menu():
+    print (" === Movie Collection Manager === ")
+    print (" 1. Add a movie ")
+    print (" 2. View all movie ")
+    print (" 3. Count watched vs unwatched ")
+    print (" 4. Find a movie ")
+    print (" 5. Exit ")
+
+    option = input ("Choose an option: ")
+    return
     # print the menu
     # return the user's choice
-    pass
+pass
 
 
 def add_movie(movie_list):
+    print(movies)
+    
+    movies.append
+    
+    title = input ("Enter movie title: ")
+    director = input ("Enter director: ")
+    status = input ("Enter status: ")
+    
     # ask for title, director, and status
     # build the movie string
     # add it to the list
