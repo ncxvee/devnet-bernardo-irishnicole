@@ -1,4 +1,7 @@
-movies = ["Movie 01", "Movie 02", "Movie 03"]
+movies = ["Harry Potter and the Sorcerer's Stone", "Harry Potter and the Chamber of Secrets", "Harry Potter and the Prisoner of Azkaban"]
+
+print (" --------------- ADD MOVIE --------------- ")
+print ()
 
 title = input ("Enter movie title: ")
 director = input ("Enter director: ")

@@ -1,44 +1,67 @@
 """
 Midterm Practical Exam — Movie Collection Manager
-Student: [your name]
+Student: Irish Nicole M. Bernardo
 """
 
-movies = ["Movie 01", "Movie 02", "Movie 03"]
+movies = ["Harry Potter and the Sorcerer's Stone", "Harry Potter and the Chamber of Secrets", "Harry Potter and the Prisoner of Azkaban"]
+
 
 
 def display_menu():
-    print (" === Movie Collection Manager === ")
-    print (" 1. Add a movie ")
-    print (" 2. View all movie ")
-    print (" 3. Count watched vs unwatched ")
-    print (" 4. Find a movie ")
-    print (" 5. Exit ")
+    # print the menu
+    # return the user's choice
+
+    print (" ------------------------------------- ")
+    print ("|       Movie Collection Manager      |")
+    print (" ------------------------------------- ")
+    print ("|  1. Add a movie                     |")
+    print ("|  2. View all movie                  |")
+    print ("|  3. Count watched vs unwatched      |")
+    print ("|  4. Find a movie                    |")
+    print ("|  5. Exit                            |")
+    print (" ------------------------------------- ")
+
+    print ()
 
     option = input ("Choose an option: ")
     return
-    # print the menu
-    # return the user's choice
-pass
+    pass
 
 
 def add_movie(movie_list):
-    print(movies)
-    
-    movies.append
-    
-    title = input ("Enter movie title: ")
-    director = input ("Enter director: ")
-    status = input ("Enter status: ")
-    
     # ask for title, director, and status
     # build the movie string
     # add it to the list
+
+    print (" ------------- ADD MOVIE ------------- ")
+    print ()
+
+    title = input ("Enter movie title: ")
+    director = input ("Enter director: ")
+    status = input ("Enter status: ")
+
+    movies.append(title)
+
+    print ()
+    print("Movie added successfully.")
+    print ()
+
+    for x in movies:
+        print(x)
+    return
     pass
 
 
 def view_movies(movie_list):
     # loop through and print every movie
     # handle empty list
+
+    print (" ------------ VIEW MOVIES ------------ ")
+    print ()
+
+    for x in movies:
+        print(x)
+    return
     pass
 
 
@@ -54,6 +77,44 @@ def find_movie(movie_list):
     # search the list
     # search should be case-insensitive
     # print the result or "Movie not found."
+
+    print (" ------------ FIND MOVIE ------------- ")
+    print ()
+
+    find = input ("Enter movie title: ")
+
+    print ()
+
+    if find in movies:
+        print("Movie found!")
+
+    else:
+        print("Movie not found!")
+    
+    print ()
+    return
+    pass
+
+def remove_movie(movie_list):
+    # ask for a movie title
+    # search the list
+    # remove it if found
+    # display a message if it does not exist
+
+    print (" ----------- REMOVE MOVIE ------------ ")
+    print ()
+
+    remove = input ("Remove Movie Title: ")
+
+    movies.remove(remove)
+
+    print ()
+    print("Movie removed successfully.")
+    print ()
+
+    for x in movies:
+        print(x)
+    return
     pass
 
 
@@ -62,5 +123,22 @@ def main():
     # call the appropriate function based on the user's choice
     pass
 
-
 main()
+
+display = display_menu ()
+print (display)
+
+add = add_movie ()
+print (add)
+
+view = view_movies ()
+print (view)
+
+count = count_watched_unwatched ()
+print (count)
+
+find = find_movie ()
+print (find)
+
+remove = remove_movie ()
+print (remove)
