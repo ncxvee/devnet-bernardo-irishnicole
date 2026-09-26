@@ -6,4 +6,9 @@ status = input ("Enter status: ")
 
 movies.append(title)
 
+print ()
 print("Movie added successfully.")
+print ()
+
+for x in movies:
+    print(x)
